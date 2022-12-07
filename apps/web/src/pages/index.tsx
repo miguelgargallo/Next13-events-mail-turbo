@@ -24,26 +24,15 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 1 }}
           >
-            <div className="m-3 flex flex-col items-center justify-center">
-              <h2 className="py-4 text-center text-2xl font-bold text-white">
-                Descubre nuevos eventos y consigue trabajo hoy mismo.
-              </h2>
-              <button
-                className="m-2 rounded-full py-3 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block"
-                style={generateJSXMeshGradient(ELEMENTS)}
-              >
-                <a href="/cv/crea">Crea mi CV rápido</a>
-              </button>
-            </div>
             <div className="flex flex-col items-center justify-center py-8">
               <p className="text-center text-2xl font-bold text-white">
-                Version 1.4, vs 1.5 vs 2.0 + Pylar&trade; AI prompts
+                Consigue Trabajo hoy mismo
               </p>
             </div>
           </motion.div>
         </div>
         <div className="pylarDiv">
-        {/*   <motion.img
+          <motion.img
             className="pylarDimension"
             src="https://raw.githubusercontent.com/miguelgargallo/Next13-Gallery-Image-Turbo/main/Data.pylar/Images/Pylar-v1.0/A_photography_of_the_earth__from_the_moon_on_a_fis_AAAGOLpA_RealESRGAN_x4plus.jpeg"
             alt="Earth by Stable Diffusion 1.4 and Pylar Prompt guidelines"
@@ -66,7 +55,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.6 }}
-          /> */}
+          />
         </div>
       </main>
       <Footer />
