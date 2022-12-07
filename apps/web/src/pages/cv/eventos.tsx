@@ -1,12 +1,11 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from "next/head";
 import { Menu } from "ui";
-import { TitlePylar } from "ui";
 import { Footer } from "ui";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  console.log("✅ Girls by Pylar AI, a Miguel Gargallo Startup");
+  console.log("✅ BlackHoles by Pylar AI, a Miguel Gargallo Startup");
   return (
     <div className="min-w-screen flex min-h-screen flex-col bg-black">
       <Head>
@@ -15,7 +14,6 @@ export default function Home() {
       </Head>
       <Menu />
       <main>
-        <TitlePylar />
         <div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -53,7 +51,7 @@ export default function Home() {
               <div className="pylarDiv">
                 <motion.img
                   className="pylarDimension"
-                  src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/01.png"
+                  src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00006-350538659-A%20black%20hole.png"
                   alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -61,7 +59,7 @@ export default function Home() {
                 />
                 <motion.img
                   className="pylarDimension"
-                  src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/14.png"
+                  src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00019-991914028-A%20black%20hole.png"
                   alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -75,7 +73,7 @@ export default function Home() {
         <div className="pylarDiv py-6">
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/01.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00006-350538659-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -83,7 +81,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/02.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00007-1118474699-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -91,7 +89,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/03.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00008-3734026194-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -99,7 +97,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/04.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00009-3663762282-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -107,7 +105,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/05.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00010-2103428778-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -115,7 +113,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/06.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00011-3218461420-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -123,7 +121,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/07.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00012-20977947-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -131,7 +129,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/08.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00013-2025677393-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -139,7 +137,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/09.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00014-731644993-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -147,7 +145,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/10.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00015-2541901117-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -155,7 +153,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/11.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00016-3158458335-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -163,7 +161,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/12.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00017-1736791612-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -171,7 +169,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/13.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00018-2488075906-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -179,7 +177,7 @@ export default function Home() {
           />
           <motion.img
             className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120622/girl/14.png"
+            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120522/00019-991914028-A%20black%20hole.png"
             alt="Black Hole by Stable Diffusion 2.0 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

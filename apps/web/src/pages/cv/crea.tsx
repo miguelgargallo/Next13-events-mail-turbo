@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from "next/head";
 import { Menu } from "ui";
-import { TitlePylar } from "ui";
 import { Footer } from "ui";
 import { motion } from "framer-motion";
 
@@ -15,7 +14,6 @@ export default function Home() {
       </Head>
       <Menu />
       <main>
-        <TitlePylar />
         <div>
           <motion.div
             initial={{ opacity: 0 }}

@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from "next/head";
 import { Menu } from "ui";
-import { TitlePylar } from "ui";
+import { TitleBCNHostess } from "ui";
 import { Footer } from "ui";
 import { motion } from "framer-motion";
 import { generateJSXMeshGradient } from "meshgrad";
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <Menu />
       <main>
-        <TitlePylar />
+        <TitleBCNHostess />
         <div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -26,14 +26,13 @@ export default function Home() {
           >
             <div className="m-3 flex flex-col items-center justify-center">
               <h2 className="py-4 text-center text-2xl font-bold text-white">
-                Discover Black Holes through Pylar&trade; AI prompts on
-                StableDiffusion
+                Descubre nuevos eventos y consigue trabajo hoy mismo.
               </h2>
               <button
                 className="m-2 rounded-full py-3 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block"
                 style={generateJSXMeshGradient(ELEMENTS)}
               >
-                <a href="/collections/blackholes">Discover Black Holes</a>
+                <a href="/cv/crea">Crea mi CV rápido</a>
               </button>
             </div>
             <div className="flex flex-col items-center justify-center py-8">
@@ -44,7 +43,7 @@ export default function Home() {
           </motion.div>
         </div>
         <div className="pylarDiv">
-          <motion.img
+        {/*   <motion.img
             className="pylarDimension"
             src="https://raw.githubusercontent.com/miguelgargallo/Next13-Gallery-Image-Turbo/main/Data.pylar/Images/Pylar-v1.0/A_photography_of_the_earth__from_the_moon_on_a_fis_AAAGOLpA_RealESRGAN_x4plus.jpeg"
             alt="Earth by Stable Diffusion 1.4 and Pylar Prompt guidelines"
@@ -67,7 +66,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.6 }}
-          />
+          /> */}
         </div>
       </main>
       <Footer />
