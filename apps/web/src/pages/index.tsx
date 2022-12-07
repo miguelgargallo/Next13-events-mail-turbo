@@ -17,7 +17,9 @@ export default function Home() {
       </Head>
       <Menu />
       <main>
-        <TitleBCNHostess />
+        <div className="flex flex-col items-center justify-center">
+          <TitleBCNHostess />
+        </div>
         <div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -31,31 +33,24 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-        <div className="pylarDiv">
+        <div className="flex flex-col items-center justify-center py-8">
+          <h2 className="text-center text-xl font-bold text-white">
+            Evento en la tierra
+          </h2>
           <motion.img
             className="pylarDimension"
             src="https://raw.githubusercontent.com/miguelgargallo/Next13-Gallery-Image-Turbo/main/Data.pylar/Images/Pylar-v1.0/A_photography_of_the_earth__from_the_moon_on_a_fis_AAAGOLpA_RealESRGAN_x4plus.jpeg"
             alt="Earth by Stable Diffusion 1.4 and Pylar Prompt guidelines"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.2 }}
+            transition={{ delay: 0.4 }}
           />
-          <motion.img
-            className="pylarDimension"
-            src="https://raw.githubusercontent.com/miguelgargallo/Next13-Gallery-Image-Turbo/main/Data.pylar/Images/Pylar-v1.1/A_photography_of_the_earth__from_the_moon_on_a_fis_AAAGOLjw_RealESRGAN_x4plus.jpeg"
-            alt="Earth by Stable Diffusion 1.5 and Pylar Prompt guidelines"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.4 }}
-          />
-          <motion.img
-            className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120422/00005-1833717168-Earth%20seen%20fr.png"
-            alt="Earth by Stable Diffusion 2.0 and Pylar Prompt guidelines"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.6 }}
-          />
+                    <p className="text-center text-sm font-bold text-white">
+            ¿Qué dicen nuestros clientes?
+          </p>
+
+        </div>
+        <div className="flex flex-col items-center justify-center py-8">
         </div>
       </main>
       <Footer />

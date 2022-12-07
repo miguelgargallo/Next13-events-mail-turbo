@@ -16,9 +16,6 @@ export const Menu = () => {
       />
       <div className="m-4 flex flex-row items-center justify-between rounded-xl bg-gradient-to-r from-white to-white p-4 text-black shadow-xl sm:m-8">
         <MenuLogo />
-        <button className="rounded-xl py-2 px-4 font-bold text-black">
-          <a href="/what-is-pylar">Quien Sómos</a>
-        </button>
         <button
           className="m-2 hidden rounded-full py-3 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block"
           style={generateJSXMeshGradient(ELEMENTS)}
@@ -27,24 +24,6 @@ export const Menu = () => {
         </button>
         <button className="rounded-xl py-2 px-4 font-bold text-black">
           <a href="/sales">Crea tu CV</a>
-        </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-black sm:block">
-          <a href="/inverstors">In Store</a>
-        </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-black sm:block">
-          <a href="/inverstors">Street Marketing</a>
-        </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-black sm:block">
-          <a href="/inverstors">Ferias y Congresos</a>
-        </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-black sm:block">
-          <a href="/inverstors">Eventos de Imagen</a>
-        </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-black sm:block">
-          <a href="/inverstors">Otros Servicios</a>
-        </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-black sm:block">
-          <a href="/inverstors">Uniformes</a>
         </button>
         <div
           className="hidden py-2 px-4 font-bold text-black md:block"
