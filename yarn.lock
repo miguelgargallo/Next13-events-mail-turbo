@@ -50,16 +50,6 @@
   resolved "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.7.4.tgz"
   integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
 
-"@esbuild/android-arm@0.15.14":
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.15.14.tgz"
-  integrity sha512-+Rb20XXxRGisNu2WmNKk+scpanb7nL5yhuI1KR9wQFiC43ddPj/V1fmNyzlFC9bKiG4mYzxW7egtoHVcynr+OA==
-
-"@esbuild/linux-loong64@0.15.14":
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/@esbuild/linux-loong64/-/linux-loong64-0.15.14.tgz"
-  integrity sha512-eQi9rosGNVQFJyJWV0HCA5WZae/qWIQME7s8/j8DMvnylfBv62Pbu+zJ2eUDqNf2O4u3WB+OEXyfkpBoe194sg==
-
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-0.4.3.tgz"
@@ -154,70 +144,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/swc-android-arm-eabi@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-android-arm-eabi/-/swc-android-arm-eabi-13.0.4.tgz"
-  integrity sha512-SD9H+/zuV3L0oHIhsDdFkDqFtg6pIHtqRUPlsrNdOsmWXgMlSzxBmwt2ta4kyrazS62BQu7XRUG++ZyODS7AWg==
-
-"@next/swc-android-arm64@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-android-arm64/-/swc-android-arm64-13.0.4.tgz"
-  integrity sha512-F8W5WcBbdn/zBoy32/mQiefs9DNsT12CTSSVCsO8GvQR7GjJU+uduQ4drKcSDoDLuAFULc2jDN06Circq4vuQg==
-
-"@next/swc-darwin-arm64@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.0.4.tgz"
-  integrity sha512-/lajev+9GSie+rRTl5z8skW9RJwZ+TwMKLzzM24TbDk8lUjqPTyJZ/cU0NDj8J7VQAZ6EehACSh9rcJeBRtLuA==
-
 "@next/swc-darwin-x64@13.0.4":
   version "13.0.4"
   resolved "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-13.0.4.tgz"
   integrity sha512-HK4b2rFiju8d40GTL/jH9U6OQ7BYA2MeEHs7Dm7Rp7kwQtLzP3z6osdQS8er20tIFHDE4b+oVBy03ZUQkHf0Pg==
-
-"@next/swc-freebsd-x64@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-freebsd-x64/-/swc-freebsd-x64-13.0.4.tgz"
-  integrity sha512-xBvIGLaGzZtgJfRRJ2DBN82DQCJ/O7jkXyBp8X/vHefPWyVXVqF6C68Rv8ADp11thPpf8WpjkvDDLb9AuWHQUA==
-
-"@next/swc-linux-arm-gnueabihf@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-linux-arm-gnueabihf/-/swc-linux-arm-gnueabihf-13.0.4.tgz"
-  integrity sha512-s13pxNp9deKmmxEGTp1MoL1e4nf4wbEymEaHgFxUlhoR1OD9tK8oTNrQphQePJgVjzcWmRGH/dX7O9mVkHbU/g==
-
-"@next/swc-linux-arm64-gnu@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-13.0.4.tgz"
-  integrity sha512-Lklo65usNzoYwjX51CpDKOepWVZBdwO49/Jz3djxiYUr2lRtpDVnlfwCvzN+47j3BMVMWtC2ndIi8Q4s3J0v4g==
-
-"@next/swc-linux-arm64-musl@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-13.0.4.tgz"
-  integrity sha512-+3BXtXBwjVhd5lahDe5nKZ7EwD6hE/oLFQkITCvgxymU5qYHGlLFyF52/lyw8qhyxoCr7mMVsUFhlCzVwCfNjg==
-
-"@next/swc-linux-x64-gnu@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.0.4.tgz"
-  integrity sha512-QB8qoZrvHhZsz62nUrTKlp5IiZ8I7KZsaa6437H/W/NOZHLGJjCxROnhUjLvKVe/T5P86pjya2SUOUqWAjz4Pg==
-
-"@next/swc-linux-x64-musl@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.0.4.tgz"
-  integrity sha512-WaahF6DYUQRg1QqIMcuOu2ZsFhS3aC5iWeQyeptMHklP9wb4FfTNmBArKHknX/GXD8P9gI38WTAHJ25cc0zVwg==
-
-"@next/swc-win32-arm64-msvc@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-13.0.4.tgz"
-  integrity sha512-FD+k1j2jeY0aKcqcpzFKfTsv55PPmIZ5GKDyPjjV5AO6XvQ4nALwWl4JwizjH2426TfLXObb+C3MH0bl9Ok1Kw==
-
-"@next/swc-win32-ia32-msvc@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-13.0.4.tgz"
-  integrity sha512-+Q/Q8Ydvz3X3U84CyZdNv1HC7fE43k+xB8C6b3IFmWGa5Tu2tfskQ2FsUNBrYreZjhFC/894J3rVQ6Vj6Auugg==
-
-"@next/swc-win32-x64-msvc@13.0.4":
-  version "13.0.4"
-  resolved "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.0.4.tgz"
-  integrity sha512-vXtbo9N1FdtZZRcv4BliU28tTYrkb1EnVpUiiFFe88I6kS9aZVTMY9Z/OtDR52rl1JF1hgs9sL/59D/TQqSATQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -792,15 +722,6 @@ dlv@^1.1.3:
   resolved "https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz"
   integrity sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==
 
-"docs@file:/Users/miguel/Github/onthego/next13-events-mail-turbo/apps/docs":
-  version "1.0.0"
-  resolved "file:apps/docs"
-  dependencies:
-    next latest
-    react "^18.2.0"
-    react-dom "^18.2.0"
-    ui "*"
-
 doctrine@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/doctrine/-/doctrine-2.1.0.tgz"
@@ -883,105 +804,10 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild-android-64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-android-64/-/esbuild-android-64-0.15.14.tgz"
-  integrity sha512-HuilVIb4rk9abT4U6bcFdU35UHOzcWVGLSjEmC58OVr96q5UiRqzDtWjPlCMugjhgUGKEs8Zf4ueIvYbOStbIg==
-
-esbuild-android-arm64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-android-arm64/-/esbuild-android-arm64-0.15.14.tgz"
-  integrity sha512-/QnxRVxsR2Vtf3XottAHj7hENAMW2wCs6S+OZcAbc/8nlhbAL/bCQRCVD78VtI5mdwqWkVi3wMqM94kScQCgqg==
-
 esbuild-darwin-64@0.15.14:
   version "0.15.14"
   resolved "https://registry.npmjs.org/esbuild-darwin-64/-/esbuild-darwin-64-0.15.14.tgz"
   integrity sha512-ToNuf1uifu8hhwWvoZJGCdLIX/1zpo8cOGnT0XAhDQXiKOKYaotVNx7pOVB1f+wHoWwTLInrOmh3EmA7Fd+8Vg==
-
-esbuild-darwin-arm64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.15.14.tgz"
-  integrity sha512-KgGP+y77GszfYJgceO0Wi/PiRtYo5y2Xo9rhBUpxTPaBgWDJ14gqYN0+NMbu+qC2fykxXaipHxN4Scaj9tUS1A==
-
-esbuild-freebsd-64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-freebsd-64/-/esbuild-freebsd-64-0.15.14.tgz"
-  integrity sha512-xr0E2n5lyWw3uFSwwUXHc0EcaBDtsal/iIfLioflHdhAe10KSctV978Te7YsfnsMKzcoGeS366+tqbCXdqDHQA==
-
-esbuild-freebsd-arm64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-freebsd-arm64/-/esbuild-freebsd-arm64-0.15.14.tgz"
-  integrity sha512-8XH96sOQ4b1LhMlO10eEWOjEngmZ2oyw3pW4o8kvBcpF6pULr56eeYVP5radtgw54g3T8nKHDHYEI5AItvskZg==
-
-esbuild-linux-32@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-linux-32/-/esbuild-linux-32-0.15.14.tgz"
-  integrity sha512-6ssnvwaTAi8AzKN8By2V0nS+WF5jTP7SfuK6sStGnDP7MCJo/4zHgM9oE1eQTS2jPmo3D673rckuCzRlig+HMA==
-
-esbuild-linux-64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.15.14.tgz"
-  integrity sha512-ONySx3U0wAJOJuxGUlXBWxVKFVpWv88JEv0NZ6NlHknmDd1yCbf4AEdClSgLrqKQDXYywmw4gYDvdLsS6z0hcw==
-
-esbuild-linux-arm@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-linux-arm/-/esbuild-linux-arm-0.15.14.tgz"
-  integrity sha512-D2LImAIV3QzL7lHURyCHBkycVFbKwkDb1XEUWan+2fb4qfW7qAeUtul7ZIcIwFKZgPcl+6gKZmvLgPSj26RQ2Q==
-
-esbuild-linux-arm64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-linux-arm64/-/esbuild-linux-arm64-0.15.14.tgz"
-  integrity sha512-kle2Ov6a1e5AjlHlMQl1e+c4myGTeggrRzArQFmWp6O6JoqqB9hT+B28EW4tjFWgV/NxUq46pWYpgaWXsXRPAg==
-
-esbuild-linux-mips64le@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-linux-mips64le/-/esbuild-linux-mips64le-0.15.14.tgz"
-  integrity sha512-FVdMYIzOLXUq+OE7XYKesuEAqZhmAIV6qOoYahvUp93oXy0MOVTP370ECbPfGXXUdlvc0TNgkJa3YhEwyZ6MRA==
-
-esbuild-linux-ppc64le@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.15.14.tgz"
-  integrity sha512-2NzH+iuzMDA+jjtPjuIz/OhRDf8tzbQ1tRZJI//aT25o1HKc0reMMXxKIYq/8nSHXiJSnYV4ODzTiv45s+h73w==
-
-esbuild-linux-riscv64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-linux-riscv64/-/esbuild-linux-riscv64-0.15.14.tgz"
-  integrity sha512-VqxvutZNlQxmUNS7Ac+aczttLEoHBJ9e3OYGqnULrfipRvG97qLrAv9EUY9iSrRKBqeEbSvS9bSfstZqwz0T4Q==
-
-esbuild-linux-s390x@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-linux-s390x/-/esbuild-linux-s390x-0.15.14.tgz"
-  integrity sha512-+KVHEUshX5n6VP6Vp/AKv9fZIl5kr2ph8EUFmQUJnDpHwcfTSn2AQgYYm0HTBR2Mr4d0Wlr0FxF/Cs5pbFgiOw==
-
-esbuild-netbsd-64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-netbsd-64/-/esbuild-netbsd-64-0.15.14.tgz"
-  integrity sha512-6D/dr17piEgevIm1xJfZP2SjB9Z+g8ERhNnBdlZPBWZl+KSPUKLGF13AbvC+nzGh8IxOH2TyTIdRMvKMP0nEzQ==
-
-esbuild-openbsd-64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-openbsd-64/-/esbuild-openbsd-64-0.15.14.tgz"
-  integrity sha512-rREQBIlMibBetgr2E9Lywt2Qxv2ZdpmYahR4IUlAQ1Efv/A5gYdO0/VIN3iowDbCNTLxp0bb57Vf0LFcffD6kA==
-
-esbuild-sunos-64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-sunos-64/-/esbuild-sunos-64-0.15.14.tgz"
-  integrity sha512-DNVjSp/BY4IfwtdUAvWGIDaIjJXY5KI4uD82+15v6k/w7px9dnaDaJJ2R6Mu+KCgr5oklmFc0KjBjh311Gxl9Q==
-
-esbuild-windows-32@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-windows-32/-/esbuild-windows-32-0.15.14.tgz"
-  integrity sha512-pHBWrcA+/oLgvViuG9FO3kNPO635gkoVrRQwe6ZY1S0jdET07xe2toUvQoJQ8KT3/OkxqUasIty5hpuKFLD+eg==
-
-esbuild-windows-64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.15.14.tgz"
-  integrity sha512-CszIGQVk/P8FOS5UgAH4hKc9zOaFo69fe+k1rqgBHx3CSK3Opyk5lwYriIamaWOVjBt7IwEP6NALz+tkVWdFog==
-
-esbuild-windows-arm64@0.15.14:
-  version "0.15.14"
-  resolved "https://registry.npmjs.org/esbuild-windows-arm64/-/esbuild-windows-arm64-0.15.14.tgz"
-  integrity sha512-KW9W4psdZceaS9A7Jsgl4WialOznSURvqX/oHZk3gOP7KbjtHLSsnmSvNdzagGJfxbAe30UVGXRe8q8nDsOSQw==
 
 esbuild@^0.15.1, esbuild@>=0.13:
   version "0.15.14"
@@ -1026,7 +852,7 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-custom@*, "eslint-config-custom@file:/Users/miguel/Github/onthego/next13-events-mail-turbo/packages/eslint-config-custom":
+eslint-config-custom@*, "eslint-config-custom@file:/Users/miguel/pure/Next13-events-mail-turbo/packages/eslint-config-custom":
   version "0.0.0"
   resolved "file:packages/eslint-config-custom"
   dependencies:
@@ -2583,7 +2409,7 @@ table@^6.0.9:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-tailwind-config@*, "tailwind-config@file:/Users/miguel/Github/onthego/next13-events-mail-turbo/packages/tailwind-config":
+tailwind-config@*, "tailwind-config@file:/Users/miguel/pure/Next13-events-mail-turbo/packages/tailwind-config":
   version "0.0.0"
   resolved "file:packages/tailwind-config"
 
@@ -2669,7 +2495,7 @@ tsconfig-paths@^3.14.1:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tsconfig@*, "tsconfig@file:/Users/miguel/Github/onthego/next13-events-mail-turbo/packages/tsconfig":
+tsconfig@*, "tsconfig@file:/Users/miguel/pure/Next13-events-mail-turbo/packages/tsconfig":
   version "0.0.0"
   resolved "file:packages/tsconfig"
 
@@ -2715,31 +2541,6 @@ turbo-darwin-64@1.6.3:
   resolved "https://registry.npmjs.org/turbo-darwin-64/-/turbo-darwin-64-1.6.3.tgz"
   integrity sha512-QmDIX0Yh1wYQl0bUS0gGWwNxpJwrzZU2GIAYt3aOKoirWA2ecnyb3R6ludcS1znfNV2MfunP+l8E3ncxUHwtjA==
 
-turbo-darwin-arm64@1.6.3:
-  version "1.6.3"
-  resolved "https://registry.npmjs.org/turbo-darwin-arm64/-/turbo-darwin-arm64-1.6.3.tgz"
-  integrity sha512-75DXhFpwE7CinBbtxTxH08EcWrxYSPFow3NaeFwsG8aymkWXF+U2aukYHJA6I12n9/dGqf7yRXzkF0S/9UtdyQ==
-
-turbo-linux-64@1.6.3:
-  version "1.6.3"
-  resolved "https://registry.npmjs.org/turbo-linux-64/-/turbo-linux-64-1.6.3.tgz"
-  integrity sha512-O9uc6J0yoRPWdPg9THRQi69K6E2iZ98cRHNvus05lZbcPzZTxJYkYGb5iagCmCW/pq6fL4T4oLWAd6evg2LGQA==
-
-turbo-linux-arm64@1.6.3:
-  version "1.6.3"
-  resolved "https://registry.npmjs.org/turbo-linux-arm64/-/turbo-linux-arm64-1.6.3.tgz"
-  integrity sha512-dCy667qqEtZIhulsRTe8hhWQNCJO0i20uHXv7KjLHuFZGCeMbWxB8rsneRoY+blf8+QNqGuXQJxak7ayjHLxiA==
-
-turbo-windows-64@1.6.3:
-  version "1.6.3"
-  resolved "https://registry.npmjs.org/turbo-windows-64/-/turbo-windows-64-1.6.3.tgz"
-  integrity sha512-lKRqwL3mrVF09b9KySSaOwetehmGknV9EcQTF7d2dxngGYYX1WXoQLjFP9YYH8ZV07oPm+RUOAKSCQuDuMNhiA==
-
-turbo-windows-arm64@1.6.3:
-  version "1.6.3"
-  resolved "https://registry.npmjs.org/turbo-windows-arm64/-/turbo-windows-arm64-1.6.3.tgz"
-  integrity sha512-BXY1sDPEA1DgPwuENvDCD8B7Hb0toscjus941WpL8CVd10hg9pk/MWn9CNgwDO5Q9ks0mw+liDv2EMnleEjeNA==
-
 turbo@latest:
   version "1.6.3"
   resolved "https://registry.npmjs.org/turbo/-/turbo-1.6.3.tgz"
@@ -2769,7 +2570,7 @@ typescript@^4.1.0, typescript@^4.5.2, typescript@^4.5.3, "typescript@>=2.8.0 || 
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.3.tgz"
   integrity sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==
 
-ui@*, "ui@file:/Users/miguel/Github/onthego/next13-events-mail-turbo/packages/ui":
+ui@*, "ui@file:/Users/miguel/pure/Next13-events-mail-turbo/packages/ui":
   version "0.0.0"
   resolved "file:packages/ui"
 
@@ -2813,7 +2614,7 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-"web@file:/Users/miguel/Github/onthego/next13-events-mail-turbo/apps/web":
+"web@file:/Users/miguel/pure/Next13-events-mail-turbo/apps/web":
   version "1.0.0"
   resolved "file:apps/web"
   dependencies:
