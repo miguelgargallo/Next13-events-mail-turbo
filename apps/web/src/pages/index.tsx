@@ -28,7 +28,7 @@ export default function Home() {
           >
             <div className="flex flex-col items-center justify-center py-8">
               <p className="text-center text-2xl font-bold text-white">
-                Consigue Trabajo hoy mismo
+                Consigue el trabajo del Mañana, hoy.
               </p>
             </div>
           </motion.div>
