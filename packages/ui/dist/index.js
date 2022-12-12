@@ -544,9 +544,7 @@ __export(src_exports, {
   Navbar: () => Navbar,
   Salestext: () => Salestext,
   Scrollable: () => Scrollable,
-  Submenu: () => Submenu,
   TitleBCNHostess: () => TitleBCNHostess,
-  Usermenu: () => Usermenu,
   Version: () => Version,
   Versions: () => Versions
 });
@@ -7056,9 +7054,10 @@ function useScroll(_a = {}) {
   return values;
 }
 
-// src/Usermenu.tsx
+// src/Menu.tsx
 var import_jsx_runtime2 = require("react/jsx-runtime");
-var Usermenu = () => {
+var Menu = () => {
+  const { scrollYProgress } = useScroll();
   return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", {
     className: "hidden sm:block",
     children: [
@@ -7067,20 +7066,48 @@ var Usermenu = () => {
         style: { scaleX: scrollYProgress }
       }),
       /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", {
-        className: "flex flex-row items-left rounded-xl bg-gradient-to-r from-black to-black text-black shadow-xl sm:m-8",
+        className: "flex flex-row items-center justify-between rounded-xl bg-gradient-to-r from-white to-white text-black shadow-xl sm:m-8",
         children: [
           /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
+            className: "rounded-xl py-2 px-4 font-bold text-black",
             children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", {
               href: "/sales",
-              children: "Session"
+              children: "In Store"
             })
           }),
           /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
+            className: "rounded-xl py-2 px-4 font-bold text-black",
             children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", {
               href: "/sales",
-              children: "Options"
+              children: "Street Marketing"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", {
+            className: "rounded-xl py-2 px-4 font-bold text-black",
+            children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", {
+              href: "/sales",
+              children: "Ferias y Congresos"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", {
+            className: "rounded-xl py-2 px-4 font-bold text-black",
+            children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", {
+              href: "/sales",
+              children: "Eventos de Imagen"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", {
+            className: "rounded-xl py-2 px-4 font-bold text-black",
+            children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", {
+              href: "/sales",
+              children: "Otros Servicios"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", {
+            className: "rounded-xl py-2 px-4 font-bold text-black",
+            children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", {
+              href: "/sales",
+              children: "Uniformes"
             })
           })
         ]
@@ -7136,27 +7163,43 @@ var k = (n, t, e) => {
   return { backgroundColor: r, backgroundImage: a };
 };
 
-// src/MenuLogo.tsx
+// src/Version.tsx
 var import_jsx_runtime3 = require("react/jsx-runtime");
-var MenuLogo = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", {
-    className: "",
+var ELEMENTS = 1;
+var Version = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
+    className: "m-2 hidden rounded-full py-2 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
+    style: k(ELEMENTS),
     children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
+      href: "http://twitter.com/miguelgargallo",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      children: "v1.0.3"
+    })
+  });
+};
+
+// src/MenuLogo.tsx
+var import_jsx_runtime4 = require("react/jsx-runtime");
+var MenuLogo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", {
+    className: "",
+    children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
       href: "https://pylar.org",
       className: "",
-      children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("picture", {
-        children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("svg", {
+      children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("picture", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("svg", {
           xmlns: "http://www.w3.org/2000/svg",
           width: "400",
           height: "25",
           viewBox: "0 0 3000 700",
           className: "m-3 h-5 w-24",
-          children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("text", {
+          children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("text", {
             fill: "#000000",
             "font-family": "Roboto, sans-serif",
             "font-size": "500",
             "font-weight": "500",
-            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("tspan", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("tspan", {
               x: "30",
               y: "600",
               className: "",
@@ -7169,169 +7212,52 @@ var MenuLogo = () => {
   });
 };
 
-// src/Submenu.tsx
-var import_jsx_runtime4 = require("react/jsx-runtime");
-var ELEMENTS = 12;
-var Submenu = () => {
-  const { scrollYProgress: scrollYProgress2 } = useScroll();
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", {
-    className: "hidden sm:block",
-    children: [
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(motion.div, {
-        className: "progress-bar",
-        style: { scaleX: scrollYProgress2 }
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", {
-        className: "m-4 flex flex-row items-center justify-between rounded-xl bg-gradient-to-r from-white to-white p-4 text-black shadow-xl sm:m-8",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
-            className: "m-2 hidden rounded-full py-3 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
-            style: k(ELEMENTS),
-            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
-              href: "/cv/eventos",
-              children: "Descubre Eventos"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(MenuLogo, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-black",
-            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
-              href: "/sales",
-              children: "Crea tu CV"
-            })
-          })
-        ]
-      })
-    ]
-  });
-};
-
-// src/Menu.tsx
+// src/Navbar.tsx
 var import_jsx_runtime5 = require("react/jsx-runtime");
-var Menu = () => {
-  const { scrollYProgress: scrollYProgress2 } = useScroll();
+var ELEMENTS2 = 12;
+var Navbar = () => {
+  const { scrollYProgress } = useScroll();
   return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", {
-    className: "hidden sm:block",
+    className: "sm:hidden",
     children: [
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(motion.div, {
         className: "progress-bar",
-        style: { scaleX: scrollYProgress2 }
+        style: { scaleX: scrollYProgress }
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Usermenu, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Submenu, {}),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", {
-        className: "flex flex-row items-center justify-between rounded-xl bg-gradient-to-r from-white to-white text-black shadow-xl sm:m-8",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-black",
-            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
-              href: "/sales",
-              children: "In Store"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-black",
-            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
-              href: "/sales",
-              children: "Street Marketing"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-black",
-            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
-              href: "/sales",
-              children: "Ferias y Congresos"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-black",
-            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
-              href: "/sales",
-              children: "Eventos de Imagen"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-black",
-            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
-              href: "/sales",
-              children: "Otros Servicios"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-black",
-            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
-              href: "/sales",
-              children: "Uniformes"
-            })
-          })
-        ]
-      })
-    ]
-  });
-};
-
-// src/Version.tsx
-var import_jsx_runtime6 = require("react/jsx-runtime");
-var ELEMENTS2 = 1;
-var Version = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", {
-    className: "m-2 hidden rounded-full py-2 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
-    style: k(ELEMENTS2),
-    children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("a", {
-      href: "http://twitter.com/miguelgargallo",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      children: "v1.0.3"
-    })
-  });
-};
-
-// src/Navbar.tsx
-var import_jsx_runtime7 = require("react/jsx-runtime");
-var ELEMENTS3 = 12;
-var Navbar = () => {
-  const { scrollYProgress: scrollYProgress2 } = useScroll();
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", {
-    className: "sm:hidden",
-    children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(motion.div, {
-        className: "progress-bar",
-        style: { scaleX: scrollYProgress2 }
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", {
         className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-gray-800",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(MenuLogo, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
+          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(MenuLogo, {}),
+          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
               href: "/what-is-pylar",
               children: "What is Pylar"
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
+          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
             className: "m-2 hidden rounded-full py-3 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
-            style: k(ELEMENTS3),
-            children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
+            style: k(ELEMENTS2),
+            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
               href: "/black-holes",
               children: "Discover Black Holes"
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
+          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
               href: "/sales",
               children: "Contact Sales"
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
+          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
               href: "/inverstors",
               children: "Investors Relations"
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", {
+          /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", {
             className: "hidden py-2 px-4 font-bold text-white md:block",
             style: {
               display: "flex",
@@ -7340,16 +7266,16 @@ var Navbar = () => {
             },
             children: [
               " ",
-              /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
+              /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", {
                 className: "hidden py-2 px-4 font-bold text-white md:block",
-                children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
+                children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
                   href: "http://twitter.com/superdatas",
                   target: "_blank",
                   rel: "noopener noreferrer",
                   children: "Twitter"
                 })
               }),
-              /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Version, {})
+              /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Version, {})
             ]
           })
         ]
@@ -7359,17 +7285,17 @@ var Navbar = () => {
 };
 
 // src/TitleBCNHostess.tsx
-var import_jsx_runtime8 = require("react/jsx-runtime");
+var import_jsx_runtime6 = require("react/jsx-runtime");
 var TitleBCNHostess = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(MenuLogo, {});
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(MenuLogo, {});
 };
 
 // src/Versions.tsx
-var import_jsx_runtime9 = require("react/jsx-runtime");
+var import_jsx_runtime7 = require("react/jsx-runtime");
 var Versions = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("button", {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
     className: "hidden bg-yellow-200 py-2 px-4 text-xs font-bold text-black md:block",
-    children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("a", {
+    children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
       href: "http://github.com/miguelgargallo/next13-Fetch-Data-turbo",
       target: "_blank",
       rel: "noopener noreferrer",
@@ -7379,17 +7305,17 @@ var Versions = () => {
 };
 
 // src/Footer.tsx
-var import_jsx_runtime10 = require("react/jsx-runtime");
+var import_jsx_runtime8 = require("react/jsx-runtime");
 var Footer = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("footer", {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("footer", {
     className: "bg-black py-8 text-center text-white",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
-        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("a", {
           children: [
             "Made with \u2764\uFE0F by",
             " ",
-            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
+            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("a", {
               href: "https://twitter.com/miguelgargallo",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -7400,12 +7326,12 @@ var Footer = () => {
           ]
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
-        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("a", {
           children: [
             "2022 \xA9",
             " ",
-            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
+            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("a", {
               href: "https://huggingface.co/spaces/superdatas/LICENSE",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -7416,19 +7342,19 @@ var Footer = () => {
           ]
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", {
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", {
         className: "hidden sm:block",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", {
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", {
             className: "flex w-full items-center justify-center",
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
+              /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("a", {
                 href: "https://huggingface.co/spaces/superdatas/LICENSE",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className: "hidden p-2 md:block",
-                children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("picture", {
-                  children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("img", {
+                children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("picture", {
+                  children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("img", {
                     src: "https://huggingface.co/front/assets/huggingface_logo.svg",
                     alt: "Landscape picture",
                     width: 40,
@@ -7436,8 +7362,8 @@ var Footer = () => {
                   })
                 })
               }),
-              /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Versions, {}),
-              /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", {
+              /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Versions, {}),
+              /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", {
                 className: "hidden py-2 px-4 font-bold text-white md:block",
                 style: {
                   display: "flex",
@@ -7446,9 +7372,9 @@ var Footer = () => {
                 },
                 children: [
                   " ",
-                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("button", {
+                  /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("button", {
                     className: "hidden py-2 px-4 font-bold text-white md:block",
-                    children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
+                    children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("a", {
                       href: "http://twitter.com/miguelgargallo",
                       target: "_blank",
                       rel: "noopener noreferrer",
@@ -7459,7 +7385,7 @@ var Footer = () => {
               })
             ]
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", {
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", {
             className: "text-white",
             children: "Get the Job Tomorrow, today."
           })
@@ -7470,92 +7396,92 @@ var Footer = () => {
 };
 
 // src/Scrollable.tsx
-var import_jsx_runtime11 = require("react/jsx-runtime");
+var import_jsx_runtime9 = require("react/jsx-runtime");
 var Scrollable = () => {
-  const { scrollYProgress: scrollYProgress2 } = useScroll();
-  return /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(motion.div, {
+  const { scrollYProgress } = useScroll();
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(motion.div, {
     className: "progress-bar",
-    style: { scaleX: scrollYProgress2 }
+    style: { scaleX: scrollYProgress }
   });
 };
 
 // src/Contact.tsx
-var import_jsx_runtime12 = require("react/jsx-runtime");
+var import_jsx_runtime10 = require("react/jsx-runtime");
 var Contact = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", {
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", {
     className: "pylarDiv",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(motion.button, {
         className: "pylarButtonEmailStyle",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1 },
-        children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
           href: "mailto:sales@pylar.org",
           target: "_blank",
           rel: "noreferrer",
           children: [
             "Mail now",
-            /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", {
               className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
               children: "\u2192"
             })
           ]
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", {
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", {
         className: "pylarDiv",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(motion.button, {
             className: "pylarButtonTwitterStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
             transition: { delay: 1 },
-            children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
               href: "https://twitter.com/superdatas",
               target: "_blank",
               rel: "noreferrer",
               children: [
                 "MD Twitter now",
-                /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(motion.button, {
             className: "pylarButtonWhatsappStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
             transition: { delay: 1.2 },
-            children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
               href: "https://wa.me/+14077067844",
               target: "_blank",
               rel: "noreferrer",
               children: [
                 "Whatsapp now",
-                /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", {
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
             className: "pylarDiv",
-            children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
+            children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(motion.button, {
               className: "pylarButtonTelegramStyle",
               initial: { opacity: 0 },
               animate: { opacity: 1 },
               transition: { delay: 1.4 },
-              children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
+              children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
                 href: "https://telegram.me/pencildomains",
                 target: "_blank",
                 rel: "noreferrer",
                 children: [
                   "Telegram Now",
-                  /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", {
                     className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                     children: "\u2192"
                   })
@@ -7570,47 +7496,47 @@ var Contact = () => {
 };
 
 // src/Salestext.tsx
-var import_jsx_runtime13 = require("react/jsx-runtime");
+var import_jsx_runtime11 = require("react/jsx-runtime");
 var Salestext = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", {
+  return /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", {
     className: "text-jusitfy items-center p-16 text-white",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.p, {
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(motion.p, {
         className: "m-2 p-2",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1 },
         children: "Are you looking for a reliable and effective way to generate high-quality generative images and other data? Look no further than Pylar, the leading research organization in the field of AI technology."
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.p, {
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(motion.p, {
         className: "m-2 p-2",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1 },
         children: "Our state-of-the-art AI technology, powered by stable diffusion algorithms and private models, is capable of producing highly realistic and customizable results. Our prompt-based AI service allows users to provide specific input data and generate customized results, ensuring that they meet their specific needs and requirements."
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.p, {
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(motion.p, {
         className: "m-2 p-2",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1.2 },
         children: "Our technology has a wide range of potential applications, including the generation of images for use in research and publications, the creation of realistic simulations for testing and analysis, and the development of new AI-powered tools and technologies."
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.p, {
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(motion.p, {
         className: "m-2 p-2",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1.4 },
         children: "In addition to our AI technology, we also partner with academic institutions and research organizations to facilitate collaboration and knowledge sharing. Through these partnerships, we are able to stay at the forefront of AI research and development, and provide our customers with access to the latest advances in the field."
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.p, {
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(motion.p, {
         className: "m-2 p-2",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1.6 },
         children: "Our expertise in AI technology has also led to us receiving recognition and awards from industry organizations and academic institutions. This recognition highlights the high quality of our work and our contributions to the field of AI."
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.p, {
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(motion.p, {
         className: "m-2 p-2",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
@@ -7629,9 +7555,7 @@ var Salestext = () => {
   Navbar,
   Salestext,
   Scrollable,
-  Submenu,
   TitleBCNHostess,
-  Usermenu,
   Version,
   Versions
 });

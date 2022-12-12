@@ -2,10 +2,6 @@ declare const Button: () => JSX.Element;
 
 declare const Menu: () => JSX.Element;
 
-declare const Submenu: () => JSX.Element;
-
-declare const Usermenu: () => JSX.Element;
-
 declare const Navbar: () => JSX.Element;
 
 declare const TitleBCNHostess: () => JSX.Element;
@@ -22,4 +18,4 @@ declare const Contact: () => JSX.Element;
 
 declare const Salestext: () => JSX.Element;
 
-export { Button, Contact, Footer, Menu, Navbar, Salestext, Scrollable, Submenu, TitleBCNHostess, Usermenu, Version, Versions };
+export { Button, Contact, Footer, Menu, Navbar, Salestext, Scrollable, TitleBCNHostess, Version, Versions };
